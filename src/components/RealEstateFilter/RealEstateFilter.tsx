@@ -1,32 +1,24 @@
 import { Box } from '@mui/system';
-import React, { ReactNode, useState } from 'react';
+import React, { ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FilterTypes } from '../../constants/FilterTypes';
 import FilterBox from '../../features/FilterBox/FilterBox';
 import Input, { InputProps } from '../../features/Input/Input';
 import YearPicker, { YearPickerValue } from '../../features/YearPicker/YearPicker';
-import { FilterParams } from '../../helpers/simulateBe';
 import { ResponseFilter } from '../../models/Response';
 import { realEstateFilterRootStyles } from './RealEstateFilter.styles';
 
 interface RealEstateFilterProps {
     filters: Array<ResponseFilter>;
-    onSearch: (filters: FilterParams) => void;
+    onSearch: () => void;
+    addFilter: (name: string, filterValue?: string | number) => void;
 }
 
-const RealEstateFilter = ({ filters, onSearch }: RealEstateFilterProps) => {
+const RealEstateFilter = ({ filters, addFilter, onSearch }: RealEstateFilterProps) => {
     const { t } = useTranslation();
-    const [filterValues, setFilterValues] = useState<FilterParams>({});
-
-    const addFilterValue = (name: string, filterValue?: string | number) => {
-        setFilterValues({
-            ...filterValues,
-            [name]: filterValue,
-        });
-    };
 
     const onInputChange = (name: string, inputValue: string | number) => {
-        addFilterValue(name, inputValue);
+        addFilter(name, inputValue);
     };
 
     const getFilterComponent = (type: FilterTypes, componentProps: Pick<InputProps, 'name' | 'label'>): ReactNode => {
@@ -45,7 +37,7 @@ const RealEstateFilter = ({ filters, onSearch }: RealEstateFilterProps) => {
                         label={componentProps.label}
                         onChange={(event: React.ChangeEvent<{}>, yearPickerValue: YearPickerValue) => {
                             const yearValue = yearPickerValue?.label ? parseInt(yearPickerValue?.label) : undefined;
-                            addFilterValue(componentProps.name, yearValue);
+                            addFilter(componentProps.name, yearValue);
                         }}
                     />
                 );
@@ -60,13 +52,9 @@ const RealEstateFilter = ({ filters, onSearch }: RealEstateFilterProps) => {
         }
     };
 
-    const onSearchHandler = () => {
-        onSearch(filterValues);
-    };
-
     return (
         <Box sx={realEstateFilterRootStyles}>
-            <FilterBox onSearch={onSearchHandler}>
+            <FilterBox onSearch={onSearch}>
                 {filters.map(({ name, type }: ResponseFilter) => (
                     <React.Fragment key={name}>
                         {getFilterComponent(type, {

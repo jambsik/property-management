@@ -23,6 +23,6 @@ export const applyFilters = <Type>(filters: FilterParams, data: Array<Type>): Ar
     return dataToTransform;
 };
 
-export const getNumberOfPages = (total: number) => Math.floor(total / Pagination.DefaultLimit) + Pagination.offset;
+export const getNumberOfPages = (total: number) => Math.floor(total / Pagination.DefaultLimit);
 
 /* END THE BACKEND SIMULATION BLOCK */

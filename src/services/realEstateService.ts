@@ -9,7 +9,7 @@ import { applyPagination } from '../helpers/simulateBe';
 
 export const API_URL = process.env.REACT_APP_API_URL;
 
-export const fetchGetRealEstateData = (filters?: FilterParams): Promise<Response<RealEstate>> =>
+export const fetchGetRealEstateData = (filters?: FilterParams, page = Pagination.DefaultPage): Promise<Response<RealEstate>> =>
     new Promise(async (resolve) => {
         try {
             const { data } = await axios.get(`${API_URL}/${Endpoints.RealEstate}`, {
@@ -17,10 +17,11 @@ export const fetchGetRealEstateData = (filters?: FilterParams): Promise<Response
                 params: {},
             });
             const response = data;
-            const count = getNumberOfPages(response.data.length);
             const filteredData = filters ? applyFilters(filters, response.data) : response.data;
+            const count = getNumberOfPages(filteredData.length);
 
-            response.data = applyPagination<RealEstate>(filteredData, 1, Pagination.DefaultLimit);
+            response.data = applyPagination<RealEstate>(filteredData, page, Pagination.DefaultLimit);
+
             response.metaData = {
                 pagination: {
                     count,
