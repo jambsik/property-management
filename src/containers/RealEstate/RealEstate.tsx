@@ -5,10 +5,10 @@ import RealEstateFilter from '../../components/RealEstateFilter/RealEstateFilter
 import RealEstateList from '../../components/RealEstateList/RealEstateList';
 import { FilterParams } from '../../helpers/simulateBe';
 import { RealEstate as RealEstateModel } from '../../models/RealEstate';
-import { ResponseFilter } from '../../models/Response';
+import { ResponseFilter, ResponsePagination } from '../../models/Response';
 import { getRealEstateDataAction } from '../../store/realEstate/actions/getRealEstateData';
 import { getRealStateMetaDataAction } from '../../store/realEstate/actions/getRealEstateMetaData';
-import { selectRealEstateFilters, selectRealEstateItems } from '../../store/realEstate/realEstateSlice';
+import { selectRealEstateFilters, selectRealEstateItems, selectRealEstatePagination } from '../../store/realEstate/realEstateSlice';
 import { realEstateContentStyles, realEstateIconStyles, realEstateRootStyles } from './RealEstate.styles';
 
 const RealEstate = () => {
@@ -16,6 +16,7 @@ const RealEstate = () => {
     const dispatch = useDispatch();
     const filters: Array<ResponseFilter> = useSelector(selectRealEstateFilters);
     const items: Array<RealEstateModel> = useSelector(selectRealEstateItems);
+    const pagination: ResponsePagination | undefined = useSelector(selectRealEstatePagination);
 
     const getDataHandler = (filterValues?: FilterParams) => {
         dispatch(getRealEstateDataAction(filterValues));
@@ -30,7 +31,7 @@ const RealEstate = () => {
             <Image sx={realEstateIconStyles} alt="web-icon" src="images/wallet.svg" />
             <Box sx={realEstateContentStyles}>
                 <RealEstateFilter filters={filters} onSearch={getDataHandler} />
-                <RealEstateList items={items} onSearch={getDataHandler} />
+                <RealEstateList pagination={pagination} items={items} onSearch={getDataHandler} />
             </Box>
         </Box>
     );

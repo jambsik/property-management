@@ -1,4 +1,5 @@
-import { FilterParams, applyFilters } from './../helpers/simulateBe';
+import { Pagination } from './../constants/Pagination';
+import { FilterParams, applyFilters, getNumberOfPages } from './../helpers/simulateBe';
 import axios from 'axios';
 
 import { Endpoints } from './../constants/Endpoints';
@@ -16,9 +17,15 @@ export const fetchGetRealEstateData = (filters?: FilterParams): Promise<Response
                 params: {},
             });
             const response = data;
+            const count = getNumberOfPages(response.data.length);
             const filteredData = filters ? applyFilters(filters, response.data) : response.data;
 
-            response.data = applyPagination<RealEstate>(filteredData, 1, 4);
+            response.data = applyPagination<RealEstate>(filteredData, 1, Pagination.DefaultLimit);
+            response.metaData = {
+                pagination: {
+                    count,
+                },
+            };
 
             resolve(response);
         } catch (error) {
