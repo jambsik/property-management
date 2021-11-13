@@ -6,15 +6,15 @@
                 "type": "string"
             },
             {
-                "name": "yearBuilt",
+                "name": "yearbuilt",
                 "type": "year"
             },
             {
-                "name": "yearSold",
+                "name": "yrsold",
                 "type": "year"
             },
             {
-                "name": "salePrice",
+                "name": "saleprice",
                 "type": "number"
             }
         ]

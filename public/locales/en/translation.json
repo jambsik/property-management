@@ -7,9 +7,16 @@
     "realEstate": {
         "filters": {
             "street": "Street",
-            "yearBuilt": "Year of Built",
-            "yearSold": "Year of Sold",
-            "salePrice": "Sale Price in €"
+            "yearbuilt": "Year of Built",
+            "yrsold": "Year of Sold",
+            "saleprice": "Sale Price in €",
+            "garagecars": "G. Cars",
+            "kitchenabvgr": "Kitchen abv",
+            "bedroomabvgr": "Bed room abv"
+        },
+        "list": {
+            "title": "Manage your real estate",
+            "subTitle": "Find your last properties sold"
         }
     }
 }

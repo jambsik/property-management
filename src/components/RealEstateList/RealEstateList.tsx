@@ -1,10 +1,53 @@
-import { Paper } from '@mui/material';
+import { IconButton, Paper, Typography } from '@mui/material';
+import { Box, styled } from '@mui/system';
 import React from 'react';
-import { realEstateListPaperStyles } from './RealEstateList.styles';
+import { useTranslation } from 'react-i18next';
+import SearchIcon from '@mui/icons-material/Search';
 
-interface RealEstateListProps {}
+import { realEstateListIconStyles, realEstateListImageStyles, realEstateListItemStyles, realEstateListLoaderStyles, realEstateListPaperStyles } from './RealEstateList.styles';
+import { Size } from '../../constants/Size';
+import { RealEstate } from '../../models/RealEstate';
+import { FilterBoxSearch } from '../../features/FilterBox/FilterBox';
+import RealEstateListItem from './RealEstateListItem';
 
-const RealEstateList = (props: RealEstateListProps) => {
-    return <Paper sx={realEstateListPaperStyles} elevation={3}></Paper>;
+interface RealEstateListProps {
+    items: Array<RealEstate>;
+    onSearch: FilterBoxSearch;
+}
+
+const RealEstateList = ({ items, onSearch }: RealEstateListProps) => {
+    const { t } = useTranslation();
+    const hasItems = items.length > 0;
+
+    const Image = styled('img')``;
+
+    const getLoaderBlock = () => (
+        <>
+            <Typography color="info" variant="h4">
+                {t('realEstate.list.title')}
+            </Typography>
+            <Image alt="build" sx={realEstateListImageStyles} src="images/build.svg" />
+            <Typography color="info" variant="h4">
+                {t('realEstate.list.subTitle')}
+            </Typography>
+            <IconButton onClick={onSearch} sx={realEstateListIconStyles} aria-label="searcheable real estate" color="secondary">
+                <SearchIcon fontSize={Size.Large} />
+            </IconButton>
+        </>
+    );
+
+    return (
+        <Paper sx={realEstateListPaperStyles} elevation={3}>
+            {hasItems ? (
+                items.map((item: RealEstate) => (
+                    <Box key={item.id} sx={realEstateListItemStyles}>
+                        <RealEstateListItem item={item} />
+                    </Box>
+                ))
+            ) : (
+                <Box sx={realEstateListLoaderStyles}>{getLoaderBlock()}</Box>
+            )}
+        </Paper>
+    );
 };
 export default RealEstateList;
