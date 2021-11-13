@@ -1,6 +1,7 @@
 {
     "home": {
-        "title": "Welcome to the app!",
+        "title": "Let's start now",
+        "subTitle": "Manage your real estate",
         "get_started": "Get Started"
     }
 }

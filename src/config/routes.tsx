@@ -1,10 +1,10 @@
 import { RouteProps } from 'react-router';
 import Home from '../containers/Home/Home';
-import MockView from '../containers/MockView/MockView';
+import RealEstate from '../containers/RealEstate/RealEstate';
 
 export const APP_ROUTES_PATH = {
     base: '/',
-    mockView: '/mock-view',
+    realEstate: '/real-estate',
 };
 
 export const appRoutes: RouteProps[] = [
@@ -13,7 +13,7 @@ export const appRoutes: RouteProps[] = [
         element: <Home />,
     },
     {
-        path: APP_ROUTES_PATH.mockView,
-        element: <MockView />,
+        path: APP_ROUTES_PATH.realEstate,
+        element: <RealEstate />,
     },
 ];

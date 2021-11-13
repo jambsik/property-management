@@ -10,3 +10,5 @@ export const emerald = '#2eefaa';
 export const lightEmerald = '#61F7C2';
 
 export const white = '#fff';
+
+export const turquoise = '#77E4D4';
