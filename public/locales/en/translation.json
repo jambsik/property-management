@@ -2,6 +2,14 @@
     "home": {
         "title": "Let's start now",
         "subTitle": "Manage your real estate",
-        "get_started": "Get Started"
+        "getStarted": "Get Started"
+    },
+    "realEstate": {
+        "filters": {
+            "street": "Street",
+            "yearBuilt": "Year of Built",
+            "yearSold": "Year of Sold",
+            "salePrice": "Sale Price in €"
+        }
     }
 }

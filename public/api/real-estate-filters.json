@@ -1,0 +1,22 @@
+{
+    "metaData": {
+        "filters": [
+            {
+                "name": "street",
+                "type": "string"
+            },
+            {
+                "name": "yearBuilt",
+                "type": "year"
+            },
+            {
+                "name": "yearSold",
+                "type": "year"
+            },
+            {
+                "name": "salePrice",
+                "type": "number"
+            }
+        ]
+    }
+}

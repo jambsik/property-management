@@ -22,7 +22,7 @@ const Home = () => {
             </Typography>
             <Link to={APP_ROUTES_PATH.realEstate}>
                 <Button sx={homeGetStartedStyles} variant="contained" size="medium" color="secondary">
-                    {t('home.get_started')}
+                    {t('home.getStarted')}
                 </Button>
             </Link>
         </Box>

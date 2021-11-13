@@ -1,14 +1,15 @@
-import { TextField } from '@mui/material';
+import { TextField, TextFieldProps } from '@mui/material';
 import React from 'react';
 import { inputRootStyles } from './Input.styles';
 
-interface InputProps {
-    key: string;
+export interface InputProps {
+    name: string;
     label: string;
+    type: string;
 }
 
-const Input = ({ key, label }: InputProps) => {
-    return <TextField sx={inputRootStyles} id={key} label={label} variant="standard" color="info" />;
+const Input = ({ name, label, type, ...props }: InputProps | TextFieldProps) => {
+    return <TextField sx={inputRootStyles} id={name} label={label} type={type} variant="standard" color="info" {...props} />;
 };
 
 export default Input;

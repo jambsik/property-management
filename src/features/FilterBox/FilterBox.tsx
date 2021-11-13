@@ -16,7 +16,7 @@ const FilterBox = ({ children }: FilterBoxProps) => {
             <Box sx={filterBoxChildStyles}>
                 {children}
                 <IconButton aria-label="searcheable real estate" color="secondary">
-                    <SearchIcon fontSize={Size.Medium} />
+                    <SearchIcon fontSize={Size.Large} />
                 </IconButton>
             </Box>
         </Box>
