@@ -18,28 +18,45 @@ const RealEstateFilter = ({ filters, onSearch }: RealEstateFilterProps) => {
     const { t } = useTranslation();
     const [filterValues, setFilterValues] = useState<FilterParams>({});
 
-    const getFilterComponent = (type: FilterTypes, componentProps: InputProps): ReactNode => {
+    const addFilterValue = (name: string, filterValue?: string | number) => {
+        setFilterValues({
+            ...filterValues,
+            [name]: filterValue,
+        });
+    };
+
+    const onInputChange = (name: string, inputValue: string | number) => {
+        addFilterValue(name, inputValue);
+    };
+
+    const getFilterComponent = (type: FilterTypes, componentProps: Pick<InputProps, 'name' | 'label'>): ReactNode => {
         switch (type) {
-            case FilterTypes.String:
             case FilterTypes.Number:
-                return <Input {...componentProps} type={type} />;
+                return (
+                    <Input
+                        {...componentProps}
+                        onChange={(event: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => onInputChange(componentProps.name, parseInt(event.target.value))}
+                        type={type}
+                    />
+                );
             case FilterTypes.Year:
                 return (
                     <YearPicker
                         label={componentProps.label}
                         onChange={(event: React.ChangeEvent<{}>, yearPickerValue: YearPickerValue) => {
-                            const hasValue = yearPickerValue?.label;
-                            if (hasValue) {
-                                setFilterValues({
-                                    ...filterValues,
-                                    [componentProps.name]: parseInt(yearPickerValue?.label),
-                                });
-                            }
+                            const yearValue = yearPickerValue?.label ? parseInt(yearPickerValue?.label) : undefined;
+                            addFilterValue(componentProps.name, yearValue);
                         }}
                     />
                 );
             default:
-                return <Input {...componentProps} type={FilterTypes.String} />;
+                return (
+                    <Input
+                        {...componentProps}
+                        onChange={(event: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => onInputChange(componentProps.name, event.target.value)}
+                        type={FilterTypes.String}
+                    />
+                );
         }
     };
 
@@ -55,7 +72,6 @@ const RealEstateFilter = ({ filters, onSearch }: RealEstateFilterProps) => {
                         {getFilterComponent(type, {
                             name,
                             label: t(`realEstate.filters.${name}`),
-                            type,
                         })}
                     </React.Fragment>
                 ))}
