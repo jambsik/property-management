@@ -1,3 +1,4 @@
 export enum Endpoints {
-    MockUrl = 'apiMock.json',
+    RealEstate = 'api/real-estate.json',
+    RealEstateFilters = 'api/real-estate-filters.json',
 }

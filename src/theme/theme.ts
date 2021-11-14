@@ -1,6 +1,6 @@
 import { BreakPoints } from './../constants/BreakPoints';
 import { createTheme } from '@mui/material/styles';
-import { emerald, intensePurple, lightPurple, white, lightEmerald } from './colors';
+import { emerald, intensePurple, lightPurple, white, lightEmerald, darkEmerald } from './colors';
 
 export const appTheme = createTheme({
     palette: {
@@ -8,7 +8,7 @@ export const appTheme = createTheme({
             main: white,
         },
         secondary: {
-            main: emerald,
+            main: darkEmerald,
         },
         info: {
             main: intensePurple,

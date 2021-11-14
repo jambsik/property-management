@@ -1,0 +1,22 @@
+{
+    "metaData": {
+        "filters": [
+            {
+                "name": "street",
+                "type": "string"
+            },
+            {
+                "name": "yearbuilt",
+                "type": "year"
+            },
+            {
+                "name": "yrsold",
+                "type": "year"
+            },
+            {
+                "name": "saleprice",
+                "type": "number"
+            }
+        ]
+    }
+}

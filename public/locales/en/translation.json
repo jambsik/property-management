@@ -2,6 +2,24 @@
     "home": {
         "title": "Let's start now",
         "subTitle": "Manage your real estate",
-        "get_started": "Get Started"
+        "getStarted": "Get Started"
+    },
+    "realEstate": {
+        "filters": {
+            "street": "Street",
+            "yearbuilt": "Year of Built",
+            "yrsold": "Year of Sold",
+            "saleprice": "Sale Price in €",
+            "garagecars": "G. Cars",
+            "kitchenabvgr": "Kitchen abv",
+            "bedroomabvgr": "Bed room abv"
+        },
+        "list": {
+            "title": "Manage your real estate",
+            "subTitle": "Find your last properties sold"
+        },
+        "detail": {
+            "tryAgain": "Oops, I think you need a valid ID. Try again!"
+        }
     }
 }

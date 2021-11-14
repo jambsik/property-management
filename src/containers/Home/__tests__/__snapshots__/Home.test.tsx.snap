@@ -6,19 +6,29 @@ exports[`Home container test Should render component without errors 1`] = `
     class="MuiBox-root css-srv7rf"
   >
     <h1
-      class="MuiTypography-root MuiTypography-h1 css-utprum-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-h1 css-1mot0xu-MuiTypography-root"
     >
       home.title
     </h1>
+    <img
+      alt="manage"
+      class="css-1hdn77b"
+      src="/images/manage.svg"
+    />
+    <h1
+      class="MuiTypography-root MuiTypography-h1 css-1mot0xu-MuiTypography-root"
+    >
+      home.subTitle
+    </h1>
     <a
-      href="/mock-view"
+      href="/real-estate"
     >
       <button
-        class="MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-1nhhl2i-MuiButtonBase-root-MuiButton-root"
+        class="MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-l58x2r-MuiButtonBase-root-MuiButton-root"
         tabindex="0"
         type="button"
       >
-        home.get_started
+        home.getStarted
         <span
           class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
         />

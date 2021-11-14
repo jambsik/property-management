@@ -8,6 +8,7 @@ export const lightPurple = '#917BBC';
 
 export const emerald = '#2eefaa';
 export const lightEmerald = '#61F7C2';
+export const darkEmerald = '#057a4d';
 
 export const white = '#fff';
 

@@ -16,13 +16,13 @@ const Home = () => {
             <Typography variant="h1" color="primary">
                 {t('home.title')}
             </Typography>
-            <Image sx={homeImageStyles} alt="manage" src="images/manage.svg" />
+            <Image sx={homeImageStyles} alt="manage" src="/images/manage.svg" />
             <Typography variant="h1" color="primary">
                 {t('home.subTitle')}
             </Typography>
             <Link to={APP_ROUTES_PATH.realEstate}>
                 <Button sx={homeGetStartedStyles} variant="contained" size="medium" color="secondary">
-                    {t('home.get_started')}
+                    {t('home.getStarted')}
                 </Button>
             </Link>
         </Box>

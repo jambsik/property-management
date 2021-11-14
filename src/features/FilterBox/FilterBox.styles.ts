@@ -1,7 +1,7 @@
 import { white } from './../../theme/colors';
 
 export const filterBoxRootStyles = {
-    width: '900px',
+    width: '1000px',
     height: '90px',
     borderRadius: '36px',
     backgroundColor: white,
