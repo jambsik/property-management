@@ -8,7 +8,7 @@ export interface ResponsePagination {
     count: number;
 }
 export interface ResponseMetaData {
-    filters: Array<ResponseFilter>;
+    filters?: Array<ResponseFilter>;
     pagination?: ResponsePagination;
 }
 

@@ -9,7 +9,7 @@ export const APP_ROUTES_PATH = {
     realEstateDetail: '/real-estate/:id',
 };
 
-export const appRoutes: RouteProps[] = [
+export const getAppRoutes = (): RouteProps[] => [
     {
         path: APP_ROUTES_PATH.base,
         element: <Home />,

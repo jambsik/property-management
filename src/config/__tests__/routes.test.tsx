@@ -1,4 +1,4 @@
-import { appRoutes, APP_ROUTES_PATH } from '../routes';
+import { getAppRoutes, APP_ROUTES_PATH } from '../routes';
 describe('Routes config test', () => {
     it('Should check route paths integrity', () => {
         expect(APP_ROUTES_PATH).toMatchInlineSnapshot(`
@@ -11,7 +11,7 @@ describe('Routes config test', () => {
     });
 
     it('Should check application routes integrity', () => {
-        expect(appRoutes).toMatchInlineSnapshot(`
+        expect(getAppRoutes()).toMatchInlineSnapshot(`
             Array [
               Object {
                 "element": <Home />,

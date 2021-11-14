@@ -16,6 +16,7 @@ export const fetchGetRealEstateData = (filters?: FilterParams, page = Pagination
                 headers: {},
                 params: {},
             });
+
             const response = data;
             const filteredData = filters ? applyFilters(filters, response.data) : response.data;
             const count = getNumberOfPages(filteredData.length);

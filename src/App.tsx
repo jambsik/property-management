@@ -3,7 +3,7 @@ import { BrowserRouter, RouteProps, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import { Provider } from 'react-redux';
 
-import { appRoutes } from './config/routes';
+import { getAppRoutes } from './config/routes';
 import { appTheme } from './theme/theme';
 import { store } from './store';
 
@@ -14,7 +14,7 @@ const App: React.FC = () => (
         <Provider store={store}>
             <BrowserRouter>
                 <Routes>
-                    {appRoutes.map((props: RouteProps, index: number) => (
+                    {getAppRoutes().map((props: RouteProps, index: number) => (
                         <Route key={`${props.path || index}`} {...props} />
                     ))}
                 </Routes>

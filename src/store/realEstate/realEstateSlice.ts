@@ -13,7 +13,7 @@ export interface RealEstateSliceState {
     pagination?: ResponsePagination;
     item?: RealEstate;
 }
-const initialState: RealEstateSliceState = {
+export const realEstateInitialState: RealEstateSliceState = {
     filters: [],
     items: [],
     pagination: undefined,
@@ -22,7 +22,7 @@ const initialState: RealEstateSliceState = {
 
 export const realEstateSlice = createSlice({
     name: 'realEstate',
-    initialState,
+    initialState: realEstateInitialState,
     reducers: {},
     extraReducers: (builder) => {
         builder.addCase(getRealEstateItemDataAction.fulfilled, (state: RealEstateSliceState, action: PayloadAction<RealEstate | undefined>) => {
