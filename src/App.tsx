@@ -15,7 +15,7 @@ const App: React.FC = () => (
             <BrowserRouter>
                 <Routes>
                     {getAppRoutes().map((props: RouteProps, index: number) => (
-                        <Route key={`${props.path || index}`} {...props} />
+                        <Route key={`${props.path}-${index}`} {...props} />
                     ))}
                 </Routes>
             </BrowserRouter>
