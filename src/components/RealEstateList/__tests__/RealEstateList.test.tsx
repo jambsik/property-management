@@ -5,7 +5,6 @@ import { Pagination } from '../../../constants/Pagination';
 import RealEstateList from '../RealEstateList';
 import { addTestProviders } from '../../../__tests__/__utils__/renderHelper';
 import { useTranslation } from 'react-i18next';
-import { RealEstate } from '../../../models/RealEstate';
 
 describe('Real Estate List component test', () => {
     const onDispatchActionMock = jest.fn();
