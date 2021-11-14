@@ -5,7 +5,21 @@ import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import realEstateReducer from '../../store/realEstate/realEstateSlice';
 
-const storeRender = (ui, { preloadedState, store = configureStore({ reducer: { realEstate: realEstateReducer }, preloadedState }), ...renderOptions } = {}) => {
+const storeRender = (
+    ui,
+    {
+        preloadedState,
+        store = configureStore({
+            reducer: { realEstate: realEstateReducer },
+            middleware: (getDefaultMiddleware) =>
+                getDefaultMiddleware({
+                    serializableCheck: false,
+                }),
+            preloadedState,
+        }),
+        ...renderOptions
+    } = {}
+) => {
     function Wrapper({ children }) {
         return <Provider store={store}>{children}</Provider>;
     }
