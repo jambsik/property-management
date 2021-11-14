@@ -38,7 +38,7 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test --testPathIgnorePatterns=__fixtures__ __mocks__ __utils__",
-        "test:coverage": "yarn test --coverage  --collectCoverageFrom=!src/**/__tests__/** --collectCoverageFrom=!src/__snapshots__/** . ",
+        "test:coverage": "yarn test --coverage  --collectCoverageFrom=!src/**/__tests__/** --collectCoverageFrom=!src/__snapshots__/**  . ",
         "eject": "react-scripts eject",
         "prettier": "prettier --config .prettierrc --write .",
         "prepare": "husky install"
