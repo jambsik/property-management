@@ -19,7 +19,7 @@ const RealEstateListItem = ({ item }: RealEstateListItemProps) => {
 
     return (
         <Link to={getDetailPathRoute(item.id)}>
-            <Box sx={realEstateListItemRootStyles}>
+            <Box data-testid={`list-item-${item.id}`} sx={realEstateListItemRootStyles}>
                 <Image sx={realEstateListItemImgStyles} alt="home-image" src="/images/home.svg" />
                 <Grid container rowSpacing={1} columnSpacing={{ xs: 2 }}>
                     {valuesToShow.map((key: string) => (

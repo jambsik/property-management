@@ -333,3 +333,5 @@ export const basicRealEstateItemsDataMock: Array<RealEstate> = [
         saleprice: 140000,
     },
 ];
+
+export const basicRealEstateItemDataMock: RealEstate = basicRealEstateItemsDataMock[0];
