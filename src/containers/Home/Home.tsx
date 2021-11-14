@@ -16,7 +16,7 @@ const Home = () => {
             <Typography variant="h1" color="primary">
                 {t('home.title')}
             </Typography>
-            <Image sx={homeImageStyles} alt="manage" src="images/manage.svg" />
+            <Image sx={homeImageStyles} alt="manage" src="/images/manage.svg" />
             <Typography variant="h1" color="primary">
                 {t('home.subTitle')}
             </Typography>

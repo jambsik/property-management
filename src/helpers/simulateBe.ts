@@ -3,6 +3,10 @@ import { Pagination } from './../constants/Pagination';
     The next block will simulate a pagination of the json we are using as a mock. We will also simulate filtering, sorting and other things.
     In a real world they should be features provided by the own service with which we communicate with BE.
 */
+export type DataByIdType = {
+    id: number;
+};
+
 export const applyPagination = <Type>(data: Array<Type>, page: number, limit: number): Array<Type> => data.slice((page - Pagination.offset) * limit, page * limit);
 
 export type FilterParams = {
@@ -24,5 +28,7 @@ export const applyFilters = <Type>(filters: FilterParams, data: Array<Type>): Ar
 };
 
 export const getNumberOfPages = (total: number) => Math.floor(total / Pagination.DefaultLimit);
+
+export const findById = <Type extends DataByIdType>(id: number, data: Array<Type>): Type | undefined => data.find((item: Type) => item.id === id);
 
 /* END THE BACKEND SIMULATION BLOCK */

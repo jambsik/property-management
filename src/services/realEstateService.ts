@@ -1,5 +1,5 @@
 import { Pagination } from './../constants/Pagination';
-import { FilterParams, applyFilters, getNumberOfPages } from './../helpers/simulateBe';
+import { FilterParams, applyFilters, getNumberOfPages, findById } from './../helpers/simulateBe';
 import axios from 'axios';
 
 import { Endpoints } from './../constants/Endpoints';
@@ -48,5 +48,21 @@ export const fetchGetRealEstateMetaData = (): Promise<Response<void>> =>
             resolve({
                 data: [],
             });
+        }
+    });
+
+export const fetchGetRealEstateItemData = (id: string): Promise<RealEstate | undefined> =>
+    new Promise(async (resolve) => {
+        try {
+            const { data } = await axios.get(`${API_URL}/${Endpoints.RealEstate}`, {
+                headers: {},
+                params: {},
+            });
+
+            const response = data;
+
+            resolve(findById<RealEstate>(parseInt(id), response.data));
+        } catch (error) {
+            resolve(undefined);
         }
     });

@@ -61,7 +61,7 @@ const RealEstate = () => {
 
     return (
         <Box sx={realEstateRootStyles}>
-            <Image sx={realEstateIconStyles} alt="web-icon" src="images/wallet.svg" />
+            <Image sx={realEstateIconStyles} alt="web-icon" src="/images/wallet.svg" />
             <Box sx={realEstateContentStyles}>
                 <RealEstateFilter addFilter={addFilter} filters={filters} onSearch={onFilterSearch} />
                 <RealEstateList page={currentPage} numberOfPages={pagination?.count} items={items} onDispatchAction={onChangePage} />

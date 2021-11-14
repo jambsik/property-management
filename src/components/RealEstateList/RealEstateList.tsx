@@ -39,7 +39,7 @@ const RealEstateList = ({ items, page, numberOfPages, onDispatchAction }: RealEs
             <Typography color="info" variant="h4">
                 {t('realEstate.list.title')}
             </Typography>
-            <Image alt="build" sx={realEstateListImageStyles} src="images/build.svg" />
+            <Image alt="build" sx={realEstateListImageStyles} src="/images/build.svg" />
             <Typography color="info" variant="h4">
                 {t('realEstate.list.subTitle')}
             </Typography>
