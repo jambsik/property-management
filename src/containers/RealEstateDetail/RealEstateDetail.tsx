@@ -44,7 +44,7 @@ const RealEstateDetail = () => {
                                 {itemKeys?.map((key: string) => (
                                     <TableRow key={key}>
                                         <TableCell align="center">{key}</TableCell>
-                                        <TableCell component="th" scope="row">
+                                        <TableCell data-testid={`table-${key}`} component="th" scope="row">
                                             {realEstateItem[key as keyof RealEstate]}
                                         </TableCell>
                                     </TableRow>
