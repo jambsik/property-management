@@ -31,7 +31,7 @@ const YearPicker = ({ label, onChange }: YearPickerProps) => {
         <Autocomplete<{ label: string }>
             onChange={onChange}
             disablePortal
-            id="combo-box-demo"
+            id={`year-picker-${label}`}
             options={options}
             sx={{ width: '120px' }}
             renderInput={(params: TextFieldProps) => <Input {...params} label={label} />}

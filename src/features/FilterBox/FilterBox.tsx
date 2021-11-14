@@ -17,7 +17,7 @@ const FilterBox = ({ children, onSearch }: FilterBoxProps) => {
         <Box sx={filterBoxRootStyles}>
             <Box sx={filterBoxChildStyles}>
                 {children}
-                <IconButton aria-label="searcheable real estate" color="secondary" onClick={onSearch}>
+                <IconButton data-testid="filter-box-button" aria-label="searcheable real estate" color="secondary" onClick={onSearch}>
                     <SearchIcon fontSize={Size.Large} />
                 </IconButton>
             </Box>
