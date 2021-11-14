@@ -1,0 +1,722 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Real Estate List component test Visualization Behaviour Should render component without errors 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-amy87t-MuiPaper-root"
+  >
+    <div
+      class="MuiBox-root css-0"
+    >
+      <div
+        class="MuiBox-root css-i3pbo"
+      >
+        <a
+          href="/real-estate/1"
+        >
+          <div
+            class="MuiBox-root css-759u60"
+          >
+            <img
+              alt="home-image"
+              class="css-1ninaiz"
+              src="/images/home.svg"
+            />
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-undefined css-4gcdpv-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.street
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  Pave
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.yrsold
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  2008
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.yearbuilt
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  2003
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.saleprice
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  208500
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.garagecars
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  2
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.kitchenabvgr
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  1
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.bedroomabvgr
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  3
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div
+          class="css-h0smfe"
+        />
+      </div>
+      <div
+        class="MuiBox-root css-i3pbo"
+      >
+        <a
+          href="/real-estate/2"
+        >
+          <div
+            class="MuiBox-root css-759u60"
+          >
+            <img
+              alt="home-image"
+              class="css-1ninaiz"
+              src="/images/home.svg"
+            />
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-undefined css-4gcdpv-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.street
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  Pave
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.yrsold
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  2007
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.yearbuilt
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  1976
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.saleprice
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  181500
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.garagecars
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  2
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.kitchenabvgr
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  1
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.bedroomabvgr
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  3
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div
+          class="css-h0smfe"
+        />
+      </div>
+      <div
+        class="MuiBox-root css-i3pbo"
+      >
+        <a
+          href="/real-estate/3"
+        >
+          <div
+            class="MuiBox-root css-759u60"
+          >
+            <img
+              alt="home-image"
+              class="css-1ninaiz"
+              src="/images/home.svg"
+            />
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-undefined css-4gcdpv-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.street
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  Pave
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.yrsold
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  2008
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.yearbuilt
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  2001
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.saleprice
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  223500
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.garagecars
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  2
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.kitchenabvgr
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  1
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.bedroomabvgr
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  3
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div
+          class="css-h0smfe"
+        />
+      </div>
+      <div
+        class="MuiBox-root css-i3pbo"
+      >
+        <a
+          href="/real-estate/4"
+        >
+          <div
+            class="MuiBox-root css-759u60"
+          >
+            <img
+              alt="home-image"
+              class="css-1ninaiz"
+              src="/images/home.svg"
+            />
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-undefined css-4gcdpv-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.street
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  Pave
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.yrsold
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  2006
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.yearbuilt
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  1915
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.saleprice
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  140000
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.garagecars
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  3
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.kitchenabvgr
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  1
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7g5z04-MuiTypography-root"
+                >
+                  realEstate.filters.bedroomabvgr
+                  :
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-a0vo9r-MuiGrid-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1wlo5s9-MuiTypography-root"
+                >
+                  3
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div
+          class="css-h0smfe"
+        />
+      </div>
+      <nav
+        aria-label="pagination navigation"
+        class="MuiPagination-root MuiPagination-outlined css-1oj2twp-MuiPagination-root"
+      >
+        <ul
+          class="MuiPagination-ul css-wjh20t-MuiPagination-ul"
+        >
+          <li>
+            <button
+              aria-label="Go to previous page"
+              class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-rounded Mui-disabled MuiPaginationItem-previousNext css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root"
+              disabled=""
+              tabindex="-1"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon"
+                data-testid="NavigateBeforeIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button
+              aria-current="true"
+              aria-label="page 1"
+              class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-rounded Mui-selected MuiPaginationItem-page css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root"
+              tabindex="0"
+              type="button"
+            >
+              1
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </li>
+          <li>
+            <button
+              aria-label="Go to page 2"
+              class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-rounded MuiPaginationItem-page css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root"
+              tabindex="0"
+              type="button"
+            >
+              2
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </li>
+          <li>
+            <button
+              aria-label="Go to next page"
+              class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-rounded MuiPaginationItem-previousNext css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root"
+              tabindex="0"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon"
+                data-testid="NavigateNextIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                />
+              </svg>
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+`;
