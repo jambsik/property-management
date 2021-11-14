@@ -5,7 +5,7 @@ import { storeRender } from '../../../__tests__/__utils__/reduxHelper';
 import { useTranslation } from 'react-i18next';
 import { realEstateInitialState } from '../../../store/realEstate/realEstateSlice';
 import { basicRealEstateItemDataMock } from '../../../__tests__/__fixtures__/realEstateDataMock';
-import * as storeAction from '../../../store/realEstate/actions/getRealEstateItemData';
+import * as realEstateService from '../../../services/realEstateService';
 
 jest.mock('react-router', () => ({
     ...jest.requireActual('react-router'),
@@ -55,7 +55,7 @@ describe('Real Estate Detail Container test', () => {
     });
 
     it('Should dispatch getRealEstateItemData action', () => {
-        const getRealEstateItemDataSpy = jest.spyOn(storeAction, 'getRealEstateItemDataAction');
+        const getRealEstateItemDataSpy = jest.spyOn(realEstateService, 'fetchGetRealEstateItemData');
 
         storeRender(<RealEstateDetail />);
 
