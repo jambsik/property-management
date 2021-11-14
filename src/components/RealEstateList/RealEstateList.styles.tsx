@@ -1,3 +1,5 @@
+import { Theme } from '@mui/system';
+
 export const realEstateListPaperStyles = {
     width: '1200px',
     height: '900px',
@@ -15,6 +17,11 @@ export const realEstateListLoaderStyles = {
     alignItems: 'center',
 };
 
+export const realEstateListDelimiterStyles = (theme: Theme) => ({
+    width: '100%',
+    borderBottom: `2px solid ${theme.palette.info.main}`,
+});
+
 export const realEstateListImageStyles = {
     width: '800px',
     height: '600px',
@@ -31,6 +38,7 @@ export const realEstateListItemStyles = {
 export const realEstateListItemRootStyles = {
     display: 'flex',
     alignItems: 'center',
+    cursor: 'pointer',
 };
 
 export const realEstateListItemTextStyles = {
