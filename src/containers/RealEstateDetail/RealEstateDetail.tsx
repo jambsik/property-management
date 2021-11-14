@@ -1,15 +1,24 @@
 import { Box, styled } from '@mui/system';
-import { Paper, Table, TableBody, TableCell, TableContainer, TableRow } from '@mui/material';
+import { Paper, Table, TableBody, TableCell, TableContainer, TableRow, Typography } from '@mui/material';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
+import { useTranslation } from 'react-i18next';
+
 import { RealEstate } from '../../models/RealEstate';
 import { getRealEstateItemDataAction } from '../../store/realEstate/actions/getRealEstateItemData';
 import { selectRealEstateItem } from '../../store/realEstate/realEstateSlice';
-import { realEstateDetailImgStyles, realEstateDetailRootStyles, realEstateDetailTableStyles } from './RealEstateDetail.styles';
+import {
+    realEstateDetailImgStyles,
+    realEstateDetailRootStyles,
+    realEstateDetailTableStyles,
+    realEstateDetailTitleStyles,
+    realEstateDetailTryAgainStyles,
+} from './RealEstateDetail.styles';
 
 const RealEstateDetail = () => {
     const Image = styled('img')``;
+    const { t } = useTranslation();
 
     const dispatch = useDispatch();
     const { id } = useParams();
@@ -45,7 +54,12 @@ const RealEstateDetail = () => {
                     </TableContainer>
                 </>
             ) : (
-                <Box>Not item</Box>
+                <Box sx={realEstateDetailTryAgainStyles}>
+                    <Image alt="build" src="/images/build.svg" />
+                    <Typography sx={realEstateDetailTitleStyles} color="primary" variant="h3" align="center">
+                        {t('realEstate.detail.tryAgain')}
+                    </Typography>
+                </Box>
             )}
         </Box>
     );

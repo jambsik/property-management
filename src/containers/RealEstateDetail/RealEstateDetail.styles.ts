@@ -19,3 +19,14 @@ export const realEstateDetailTableStyles = {
     width: '1200px',
     height: '800px',
 };
+
+export const realEstateDetailTryAgainStyles = {
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column' as const,
+};
+
+export const realEstateDetailTitleStyles = {
+    marginTop: '48px',
+};

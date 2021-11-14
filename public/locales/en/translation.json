@@ -17,6 +17,9 @@
         "list": {
             "title": "Manage your real estate",
             "subTitle": "Find your last properties sold"
+        },
+        "detail": {
+            "tryAgain": "Oops, I think you need a valid ID. Try again!"
         }
     }
 }
