@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Imput component test Should render component without errors 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root css-1954myt-MuiFormControl-root-MuiTextField-root"
+  >
+    <label
+      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-standard MuiFormLabel-root MuiFormLabel-colorInfo css-ahcq22-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="false"
+      for="input-test"
+      id="input-test-label"
+    >
+      My Input Test
+    </label>
+    <div
+      class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorInfo MuiInputBase-formControl css-ovthwe-MuiInputBase-root-MuiInput-root"
+    >
+      <input
+        aria-invalid="false"
+        class="MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+        id="input-test"
+        type="number"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
