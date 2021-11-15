@@ -6,17 +6,17 @@ exports[`Home container test Should render component without errors 1`] = `
     class="MuiBox-root css-srv7rf"
   >
     <h1
-      class="MuiTypography-root MuiTypography-h1 css-1mot0xu-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-h1 css-4xduzk-MuiTypography-root"
     >
       home.title
     </h1>
     <img
       alt="manage"
-      class="css-1hdn77b"
+      class="css-1bdh0up"
       src="/images/manage.svg"
     />
     <h1
-      class="MuiTypography-root MuiTypography-h1 css-1mot0xu-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-h1 css-4xduzk-MuiTypography-root"
     >
       home.subTitle
     </h1>

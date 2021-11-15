@@ -18,19 +18,18 @@ export const homeGetStartedStyles = {
 
 export const homeImageStyles = (theme: Theme) => ({
     [theme.breakpoints.up(BreakPoints.Xl)]: {
-        width: '800px',
-        height: '800px',
+        width: '600px',
+    },
+    [theme.breakpoints.between(BreakPoints.Lg, BreakPoints.Xl)]: {
+        width: '300px',
     },
     [theme.breakpoints.between(BreakPoints.Md, BreakPoints.Lg)]: {
-        width: '600px',
-        height: '600px',
+        width: '200px',
     },
     [theme.breakpoints.between(BreakPoints.Sm, BreakPoints.Md)]: {
-        width: '400px',
-        height: '400px',
+        width: '100px',
     },
     [theme.breakpoints.down(BreakPoints.Sm)]: {
-        width: '200px',
-        height: '200px',
+        width: '50px',
     },
 });

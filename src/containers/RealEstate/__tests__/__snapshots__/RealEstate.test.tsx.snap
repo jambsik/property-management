@@ -3,15 +3,10 @@
 exports[`Real Estate container test Should render component without errors 1`] = `
 <div>
   <div
-    class="MuiBox-root css-sjc0no"
+    class="MuiBox-root css-1nrtrq8"
   >
-    <img
-      alt="web-icon"
-      class="css-1rler5j"
-      src="/images/wallet.svg"
-    />
     <div
-      class="MuiBox-root css-8dn448"
+      class="MuiBox-root css-ku36ua"
     >
       <div
         class="MuiBox-root css-zti9x5"

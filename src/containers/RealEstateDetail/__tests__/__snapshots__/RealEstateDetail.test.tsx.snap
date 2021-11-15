@@ -3,11 +3,11 @@
 exports[`Real Estate Detail Container test Should render component without errors 1`] = `
 <div>
   <div
-    class="MuiBox-root css-1wb3f56"
+    class="MuiBox-root css-pdnz4z"
   >
     <img
       alt="detail-backgroun"
-      class="css-iqmg7h"
+      class="css-zygzrd"
       src="/images/home.svg"
     />
     <div

@@ -53,7 +53,7 @@ appTheme.typography = {
     h1: {
         ...appTheme.typography.h1,
         [appTheme.breakpoints.up(BreakPoints.Md)]: {
-            fontSize: '6rem',
+            fontSize: '5rem',
         },
         [appTheme.breakpoints.between(BreakPoints.Sm, BreakPoints.Md)]: {
             fontSize: '4rem',

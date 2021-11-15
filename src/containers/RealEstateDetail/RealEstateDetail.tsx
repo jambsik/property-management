@@ -14,6 +14,7 @@ import {
     realEstateDetailTableStyles,
     realEstateDetailTitleStyles,
     realEstateDetailTryAgainStyles,
+    realEstateDetailTryImgStyles,
 } from './RealEstateDetail.styles';
 
 const RealEstateDetail = () => {
@@ -55,7 +56,7 @@ const RealEstateDetail = () => {
                 </>
             ) : (
                 <Box sx={realEstateDetailTryAgainStyles}>
-                    <Image alt="build" src="/images/build.svg" />
+                    <Image sx={realEstateDetailTryImgStyles} alt="build" src="/images/build.svg" />
                     <Typography sx={realEstateDetailTitleStyles} color="primary" variant="h3" align="center">
                         {t('realEstate.detail.tryAgain')}
                     </Typography>
